@@ -1,26 +1,42 @@
 import React from "react";
+import styled from "styled-components";
 
-const styles = {
-  a: {
-    textDecoration: "none",
-    color: "white",
-  },
-  li: {
-    listStyleType: "none",
-  },
-};
+const Nav = styled.div`
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+`;
+
+const Line = styled.li`
+  list-style-type: none;
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: #577bc1;
+  }
+`;
+const Button = styled.button`
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 20;
+  // background: linear-gradient(90deg, #665dcd 0%, #5fa4e6 45%, #d2ab67 100%);
+  background-color: #141619;
+  color: white;
+  width: 150px;
+  height: 50px;
+`;
 
 export default function NavBar() {
   return (
-    <div
-      style={{
-        display: "flex",
-        color: "white",
-        justifyContent: "space-between",
-        alignItems: "center",
-        height: "120px",
-      }}
-    >
+    <Nav>
       <p>
         <img src="/logo-light.png" alt="gravity logo" />
       </p>
@@ -30,37 +46,25 @@ export default function NavBar() {
           gap: 15,
         }}
       >
-        <li style={styles.li}>
-          <a style={styles.a} href="#">
-            ABOUT US
-          </a>
-        </li>
-        <li style={styles.li}>
-          <a style={styles.a} href="#">
-            OUR SERVICES
-          </a>
-        </li>
-        <li style={styles.li}>
-          <a style={styles.a} href="#">
-            WORK WITH US
-          </a>
-        </li>
-        <li style={styles.li}>
-          <a style={styles.a} href="#">
-            BLOG
-          </a>
-        </li>
+        <Line>
+          <Link href="#">ABOUT US</Link>
+        </Line>
+        <Line>
+          <Link href="#">OUR SERVICES</Link>
+        </Line>
+        <Line>
+          <Link href="#">WORK WITH US</Link>
+        </Line>
+        <Line>
+          <Link href="#">BLOG</Link>
+        </Line>
       </ul>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 10,
-        }}
-      >
-        <img src="/button_before.png" alt="button" />
-        <p>GET IN TOUCH</p>
+      <div>
+        <Button>
+          <img src="/button_before.png" alt="button" />
+          GET IN TOUCH
+        </Button>
       </div>
-    </div>
+    </Nav>
   );
 }
