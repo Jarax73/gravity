@@ -4,67 +4,78 @@ import styled from "styled-components";
 const Nav = styled.div`
   display: flex;
   color: white;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   height: 120px;
-`;
-
-const Line = styled.li`
-  list-style-type: none;
 `;
 
 const Link = styled.a`
   text-decoration: none;
   color: white;
+  flex: 1;
+  font-size: 15px;
   &:hover {
     color: #577bc1;
   }
 `;
 const Button = styled.button`
   display: flex;
-  justify-content: space-around;
+  flex: 1;
+  justify-content: flex-end;
   border: none;
   cursor: pointer;
   align-items: center;
-  gap: 20;
-  // background: linear-gradient(90deg, #665dcd 0%, #5fa4e6 45%, #d2ab67 100%);
   background-color: #141619;
   color: white;
   width: 150px;
   height: 50px;
+  font-size: 15px;
 `;
 
 export default function NavBar() {
   return (
     <Nav>
-      <p>
+      <p
+        style={{
+          flex: 1,
+          display: "flex",
+          justifyContent: "flex-start",
+        }}
+      >
         <img src="/logo-light.png" alt="gravity logo" />
       </p>
       <ul
         style={{
+          listStyle: "none",
+          margin: 0,
+          padding: 0,
+          flex: 1,
           display: "flex",
-          gap: 15,
+          justifyContent: "space-around",
         }}
       >
-        <Line>
+        <li>
           <Link href="#">ABOUT US</Link>
-        </Line>
-        <Line>
+        </li>
+        <li>
           <Link href="#">OUR SERVICES</Link>
-        </Line>
-        <Line>
+        </li>
+        <li>
           <Link href="#">WORK WITH US</Link>
-        </Line>
-        <Line>
+        </li>
+        <li>
           <Link href="#">BLOG</Link>
-        </Line>
+        </li>
       </ul>
-      <div>
-        <Button>
-          <img src="/button_before.png" alt="button" />
-          GET IN TOUCH
-        </Button>
-      </div>
+
+      <Button>
+        <img
+          style={{ marginRight: "10px" }}
+          src="/button_before.png"
+          alt="button"
+        />
+        GET IN TOUCH
+      </Button>
     </Nav>
   );
 }
