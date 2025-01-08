@@ -5,8 +5,10 @@ import useWindowSize from "../utils/useWindowSize";
 const Section = styled.section`
   height: 900px;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 370px;
+  margin-right: 370px;
+  padding-left: 194px;
+  padding-right: 194px;
 `;
 
 const Title = styled.h1`
