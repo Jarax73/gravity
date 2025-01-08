@@ -1,5 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import "./App.css";
+import AboutSection from "./components/AboutSection";
 import IntroSection from "./components/IntroSection";
 import NavBar from "./components/NavBar";
 
@@ -9,6 +10,7 @@ function App() {
       <header className="App-header">
         <NavBar />
         <IntroSection />
+        <AboutSection />
       </header>
     </div>
   );

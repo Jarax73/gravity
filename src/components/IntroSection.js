@@ -9,6 +9,7 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 900px;
 `;
 
 const Title = styled.h1`
@@ -34,15 +35,24 @@ const Button = styled.button`
 export default function IntroSection() {
   return (
     <Section>
-      <Title>
-        Balancing <br /> Crypto Markets
-      </Title>
-      <Paragraph>
-        Our fully automated proprietary quantitative trading software provides
-        24/7 liquidity to 170+ crypto assets across 25+ centralized spot and
-        derivative crypto exchanges.
-      </Paragraph>
-      <Button>GET IN TOUCH</Button>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 20,
+        }}
+      >
+        <Title>
+          Balancing <br /> Crypto Markets
+        </Title>
+        <Paragraph>
+          Our fully automated proprietary quantitative trading software provides
+          24/7 liquidity to 170+ crypto assets across 25+ centralized spot and
+          derivative crypto exchanges.
+        </Paragraph>
+        <Button>GET IN TOUCH</Button>
+      </div>
     </Section>
   );
 }
