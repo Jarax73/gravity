@@ -357,11 +357,13 @@ export default function CryptoMarketSection() {
                   "linear-gradient(to bottom, rgba(65, 85, 114, 0.15), rgba(27, 27, 30, 0.10))",
 
                 display: "flex",
+                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
               <img src="/assets/bithumb@2x.png.png" alt="" style={{}} />
+              <p style={{ color: "#999" }}>Bithumb</p>
             </div>
             <div
               style={{
@@ -372,11 +374,13 @@ export default function CryptoMarketSection() {
                   "linear-gradient(to bottom, rgba(65, 85, 114, 0.15), rgba(27, 27, 30, 0.10))",
 
                 display: "flex",
+                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
               <img src="/assets/bitbank@2x.png.png" alt="" style={{}} />
+              <p style={{ color: "#999" }}>Bitbank</p>
             </div>
             <div
               style={{
@@ -387,11 +391,13 @@ export default function CryptoMarketSection() {
                   "linear-gradient(to bottom, rgba(65, 85, 114, 0.15), rgba(27, 27, 30, 0.10))",
 
                 display: "flex",
+                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
               <img src="/assets/binance@2x.png.png" alt="" style={{}} />
+              <p style={{ color: "#999" }}>Binance</p>
             </div>
           </div>
           <div
@@ -411,11 +417,13 @@ export default function CryptoMarketSection() {
                   "linear-gradient(to bottom, rgba(65, 85, 114, 0.15), rgba(27, 27, 30, 0.10))",
 
                 display: "flex",
+                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
               <img src="/assets/bitstamp@2x.png.png" alt="" style={{}} />
+              <p style={{ color: "#999" }}>Bitstamp</p>
             </div>
             <div
               style={{
@@ -426,11 +434,13 @@ export default function CryptoMarketSection() {
                   "linear-gradient(to bottom, rgba(65, 85, 114, 0.15), rgba(27, 27, 30, 0.10))",
 
                 display: "flex",
+                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
               <img src="/assets/coinbase@2x.png.png" alt="" style={{}} />
+              <p style={{ color: "#999" }}>Coinbase</p>
             </div>
             <div
               style={{
@@ -441,11 +451,13 @@ export default function CryptoMarketSection() {
                   "linear-gradient(to bottom, rgba(65, 85, 114, 0.15), rgba(27, 27, 30, 0.10))",
 
                 display: "flex",
+                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
               <img src="/assets/bitfinex@2x.png.png" alt="" style={{}} />
+              <p style={{ color: "#999" }}>Bitfinex</p>
             </div>
           </div>
         </div>
