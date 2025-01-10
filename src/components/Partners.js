@@ -13,7 +13,7 @@ export default function Partners() {
       <h1 style={{ fontWeight: "500", fontSize: "58px" }}>
         We are in a good company
       </h1>
-      <p style={{ width: "600px", fontSize: "20px" }}>
+      <p style={{ width: "600px", fontSize: "20px", color: "#E5E5E5" }}>
         Our partnerships have delivered great value to our projects and we’re
         happy to share some of their feedback below
       </p>
@@ -27,7 +27,14 @@ export default function Partners() {
         <img src="/assets/arrowLeft.png" alt="" />
         <img src="/assets/arrowRight.png" alt="" />
       </div>
-      <p style={{ width: "678px", fontSize: "26px", fontWeight: "normal" }}>
+      <p
+        style={{
+          width: "678px",
+          fontSize: "26px",
+          fontWeight: "normal",
+          color: "#E5E5E5",
+        }}
+      >
         Since 2019, Gravity team has been an astounding market maker for Bitkub.
         They have proven themselves to be one of the most consistent, committed
         and driven market makers on our exchange. Gravity Team has contributed

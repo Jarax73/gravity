@@ -20,6 +20,7 @@ const Title = styled.h1`
 const Paragraph = styled.p`
   font-size: 18px;
   line-height: 30px;
+  color: #e5e5e5;
 `;
 
 const Button = styled.button`

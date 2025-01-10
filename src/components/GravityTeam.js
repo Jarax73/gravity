@@ -50,7 +50,8 @@ export default function GravityTeam() {
         </div>
         <div>
           <h1 style={{ fontSize: "53px", width: "400px", textAlign: "left" }}>
-            Join Gravity Team
+            Join <br />
+            Gravity Team
           </h1>
         </div>
       </div>
@@ -61,12 +62,12 @@ export default function GravityTeam() {
           flexDirection: "column",
         }}
       >
-        <p style={{ fontSize: "19px", textAlign: "left" }}>
+        <p style={{ fontSize: "19px", textAlign: "left", color: "#E5E5E5" }}>
           Join our community of innovators, problem solvers and owners who apply
           scientific discovery techniques to make crypto markets a better place
           for everyone.
         </p>
-        <p style={{ fontSize: "19px", textAlign: "left" }}>
+        <p style={{ fontSize: "19px", textAlign: "left", color: "#E5E5E5" }}>
           As we emphasize it in our name – Gravity Team, we are a team. A team
           of bright, talented people, each masters of their specialty, curious
           about the world and eager to solve the new exciting cryptocurrency

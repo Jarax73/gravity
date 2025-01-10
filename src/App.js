@@ -1,6 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import "./App.css";
 import AboutSection from "./components/AboutSection";
+import Contact from "./components/Contact";
 import CryptoMarketSection from "./components/CryptoMarketSection";
 import GravityTeam from "./components/GravityTeam";
 import IntroSection from "./components/IntroSection";
@@ -18,6 +19,7 @@ function App() {
       <CryptoMarketSection />
       <Partners />
       <GravityTeam />
+      <Contact />
     </div>
   );
 }

@@ -52,7 +52,7 @@ export default function CryptoMarketSection() {
         <h1 style={{ fontSize: "58px", fontWeight: "500" }}>
           Crypto Market Making
         </h1>
-        <p style={{ fontSize: "20px" }}>
+        <p style={{ fontSize: "20px", color: "#E5E5E5" }}>
           We are a global crypto liquidity provider and algorithmic market
           maker. We trade digital assets listed on Centralized Exchanges in over
           15 countries worldwide.
@@ -70,7 +70,7 @@ export default function CryptoMarketSection() {
           <h3 style={{ fontSize: "20px", textAlign: "left" }}>
             Accelerate your token’s journey by boosting its liquidity
           </h3>
-          <p style={{ textAlign: "left" }}>
+          <p style={{ textAlign: "left", color: "#E5E5E5" }}>
             We invest in building long-term, sustainable relationships and
             support our projects in their growth journey with our services,
             industry expertise and network.
@@ -260,7 +260,7 @@ export default function CryptoMarketSection() {
           <h3 style={{ fontSize: "20px", textAlign: "left" }}>
             Attract more traders and projects with deep order books & liquidity
           </h3>
-          <p style={{ textAlign: "left" }}>
+          <p style={{ textAlign: "left", color: "#E5E5E5" }}>
             Our world-class market making services are proven to help local and
             emerging exchanges win traders and gain market-leading positions of
             up to 90% market dominance.
