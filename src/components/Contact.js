@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <div
       style={{
-        height: "600px",
+        height: "500px",
         marginTop: "250px",
         display: "flex",
         flexDirection: "column",

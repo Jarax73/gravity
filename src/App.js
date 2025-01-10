@@ -3,6 +3,7 @@ import "./App.css";
 import AboutSection from "./components/AboutSection";
 import Contact from "./components/Contact";
 import CryptoMarketSection from "./components/CryptoMarketSection";
+import Footer from "./components/Footer";
 import GravityTeam from "./components/GravityTeam";
 import IntroSection from "./components/IntroSection";
 import NavBar from "./components/NavBar";
@@ -20,6 +21,7 @@ function App() {
       <Partners />
       <GravityTeam />
       <Contact />
+      <Footer />
     </div>
   );
 }
