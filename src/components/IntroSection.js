@@ -10,27 +10,65 @@ const Section = styled.section`
   justify-content: space-between;
   align-items: center;
   height: 900px;
+
+  @media (max-width: 1023px) {
+    width: 50%;
+    height: 800px;
+    margin-top: 10%;
+  }
+
+  @media (max-width: 767px) {
+    width: 80%;
+    height: 500px;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 74px;
   font-weight: 600;
   color: white;
+
+  @media (max-width: 1023px) {
+    font-size: 55px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 35px;
+  }
 `;
 const Paragraph = styled.p`
   font-size: 18px;
   line-height: 30px;
   color: #e5e5e5;
+
+  @media (max-width: 1023px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
 `;
 
 const Button = styled.button`
   background: linear-gradient(90deg, #665dcd 0%, #5fa4e6 45%, #d2ab67 100%);
   border: none;
-  font-size: 19px;
+  font-size: 18px;
   color: white;
   height: 58px;
   width: 190px;
   cursor: pointer;
+
+  @media (max-width: 1023px) {
+    font-size: 16px;
+    width: 150px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    width: 130px;
+    height: 38px;
+  }
 `;
 
 export default function IntroSection() {
