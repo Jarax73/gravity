@@ -14,7 +14,7 @@ const Section = styled.section`
   @media (max-width: 1023px) {
     width: 50%;
     height: 800px;
-    margin-top: 10%;
+    justify-content: center;
   }
 
   @media (max-width: 767px) {
