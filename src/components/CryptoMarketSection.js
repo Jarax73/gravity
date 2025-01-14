@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import MarketMaking from "./MarketMaking";
+import MarketMakingCrypto from "./MarketMakingCrypto";
 // import useWindowSize from "../utils/useWindowSize";
 
 const Link = styled.a`
@@ -118,61 +119,7 @@ export default function CryptoMarketSection() {
 
       <MarketMaking />
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginTop: "100px",
-          width: "100%",
-        }}
-      >
-        <div>
-          <div style={{ position: "relative" }}>
-            <img
-              src="/assets/div.png"
-              alt="div"
-              style={{ position: "absolute", left: -100, top: 0 }}
-            />
-            <img
-              src="/assets/exchange-screens-new.png"
-              alt="exchange"
-              style={{ position: "absolute", left: 0, zIndex: 1 }}
-            />
-            <img
-              src="/assets/grid.png"
-              alt="grid"
-              style={{ position: "absolute", top: 200 }}
-            />
-          </div>
-        </div>
-        <div
-          style={{ width: "370px", display: "flex", flexDirection: "column" }}
-        >
-          <h2
-            style={{ fontSize: "36px", fontWeight: "500", textAlign: "left" }}
-          >
-            Market Making for Crypto Exchanges
-          </h2>
-          <h3 style={{ fontSize: "20px", textAlign: "left" }}>
-            Attract more traders and projects with deep order books & liquidity
-          </h3>
-          <p style={{ textAlign: "left", color: "#E5E5E5" }}>
-            Our world-class market making services are proven to help local and
-            emerging exchanges win traders and gain market-leading positions of
-            up to 90% market dominance.
-          </p>
-          <div>
-            <Link href="#">
-              Learn more
-              <img
-                src="/assets/a_after.png"
-                alt="after"
-                style={{ marginLeft: "10px" }}
-              />
-            </Link>
-          </div>
-        </div>
-      </div>
+      <MarketMakingCrypto />
 
       <div
         style={{
