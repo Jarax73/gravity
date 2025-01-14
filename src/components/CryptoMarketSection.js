@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import MarketMaking from "./MarketMaking";
+// import useWindowSize from "../utils/useWindowSize";
 
 const Link = styled.a`
   position: relative;
@@ -23,211 +25,105 @@ const Link = styled.a`
   }
 `;
 
+const Section = styled.section`
+  padding-left: 20%;
+  padding-right: 20%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1023px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (max-width: 767px) {
+    // padding-left: 20%;
+    // padding-right: 20%;
+  }
+`;
+
+const Market = styled.div`
+  width: 55%;
+  margin-bottom: 100px;
+
+  @media (max-width: 1023px) {
+    width: 70%;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+`;
+
+const TitleMarket = styled.h1`
+  font-size: 58px;
+  font-weight: 500;
+
+  @media (max-width: 1023px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+  }
+`;
+
+const ParagraphMarket = styled.p`
+  font-size: 20px;
+  color: #e5e5e5;
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+`;
+
+const BackgroundImage = styled.img`
+  position: absolute;
+  top: -810px;
+  right: 0;
+
+  @media (max-width: 1023px) {
+    width: 250%;
+    top: -550px;
+    right: -300px;
+  }
+
+  @media (max-width: 767px) {
+    width: 350%;
+    top: -200px;
+    right: -350px;
+  }
+`;
+
 export default function CryptoMarketSection() {
+  // const width = useWindowSize();
+
   return (
-    <div
-      style={{
-        paddingLeft: "370px",
-        paddingRight: "370px",
-        position: "relative",
-      }}
-    >
-      <img
-        src="/assets/background-blob-service-1.png"
-        style={{
-          position: "absolute",
-          top: -850,
-          right: 0,
-        }}
-        alt=""
-      />
-      <div
-        style={{
-          width: "620px",
-          marginRight: "auto",
-          marginLeft: "auto",
-          marginBottom: "100px",
-        }}
-      >
-        <h1 style={{ fontSize: "58px", fontWeight: "500" }}>
-          Crypto Market Making
-        </h1>
-        <p style={{ fontSize: "20px", color: "#E5E5E5" }}>
+    <Section>
+      <BackgroundImage src="/assets/background-blob-service-1.png" alt="" />
+      <Market>
+        <TitleMarket>Crypto Market Making</TitleMarket>
+        <ParagraphMarket>
           We are a global crypto liquidity provider and algorithmic market
           maker. We trade digital assets listed on Centralized Exchanges in over
           15 countries worldwide.
-        </p>
-      </div>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div
-          style={{ width: "370px", display: "flex", flexDirection: "column" }}
-        >
-          <h2
-            style={{ fontSize: "36px", fontWeight: "500", textAlign: "left" }}
-          >
-            Market Making for Crypto Projects
-          </h2>
-          <h3 style={{ fontSize: "20px", textAlign: "left" }}>
-            Accelerate your token’s journey by boosting its liquidity
-          </h3>
-          <p style={{ textAlign: "left", color: "#E5E5E5" }}>
-            We invest in building long-term, sustainable relationships and
-            support our projects in their growth journey with our services,
-            industry expertise and network.
-          </p>
-          <div>
-            <Link href="#">
-              Learn more
-              <img
-                src="/assets/a_after.png"
-                alt="after"
-                style={{ marginLeft: "10px" }}
-              />
-            </Link>
-          </div>
-        </div>
-        <div
-          style={{
-            position: "relative",
-            width: "420px",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: 0,
-              position: "absolute",
-            }}
-          >
-            <img
-              src="/assets/token-4.png"
-              alt="token 4"
-              style={{ width: "54px", marginBottom: "-30px" }}
-            />
-            <img
-              src="/assets/shadow-4.png"
-              alt="shadow 4"
-              style={{ width: "100px", marginTop: "-25px" }}
-            />
-            <img
-              src="/assets/table-4.png"
-              alt="table 4"
-              style={{ width: "124px", marginTop: "0px", zIndex: 1 }}
-            />
-            <img
-              src="/assets/bar-4.png"
-              alt="bar 4"
-              style={{ width: "124px", marginTop: "-60px" }}
-            />
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: 0,
-              position: "absolute",
-              left: 80,
-            }}
-          >
-            <img
-              src="/assets/token-1.png"
-              alt="token 1"
-              style={{ width: "130px", marginBottom: "-30px", zIndex: 2 }}
-            />
-            <img
-              src="/assets/shadow-1.png"
-              alt="shadow 1"
-              style={{ width: "160px", marginTop: "-85px" }}
-            />
-            <img
-              src="/assets/table-1.png"
-              alt="table 1"
-              style={{ width: "190px", marginTop: "0px", zIndex: 1 }}
-            />
-            <img
-              src="/assets/bar-1.png"
-              alt="bar 1"
-              style={{ width: "190px", marginTop: "-130px" }}
-            />
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: 0,
-              position: "absolute",
-              bottom: 40,
-            }}
-          >
-            <img
-              src="/assets/token-3.png"
-              alt="token 3"
-              style={{ width: "86px", marginBottom: "-30px", zIndex: 2 }}
-            />
-            <img
-              src="/assets/shadow-3.png"
-              alt="shadow 3"
-              style={{ width: "100px", marginTop: "-50px" }}
-            />
-            <img
-              src="/assets/table-3.png"
-              alt="table 3"
-              style={{ width: "108px", marginTop: "0px", zIndex: 1 }}
-            />
-            <img
-              src="/assets/bar-3.png"
-              alt="bar 3"
-              style={{ width: "108px", marginTop: "-50px" }}
-            />
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: 0,
-              position: "absolute",
-              bottom: 0,
-              right: 60,
-            }}
-          >
-            <img
-              src="/assets/token-2.png"
-              alt="token 2"
-              style={{ width: "116px", marginBottom: "-30px", zIndex: 2 }}
-            />
-            <img
-              src="/assets/shadow-2.png"
-              alt="shadow 2"
-              style={{ width: "120px", marginTop: "-75px" }}
-            />
-            <img
-              src="/assets/table-2.png"
-              alt="table 2"
-              style={{ width: "150px", marginTop: "0px", zIndex: 1 }}
-            />
-            <img
-              src="/assets/bar-2.png"
-              alt="bar 2"
-              style={{ width: "150px", marginTop: "-80px" }}
-            />
-          </div>
-        </div>
-      </div>
+        </ParagraphMarket>
+      </Market>
+
+      <MarketMaking />
 
       <div
         style={{
           display: "flex",
           justifyContent: "space-between",
           marginTop: "100px",
+          width: "100%",
         }}
       >
         <div>
@@ -278,7 +174,14 @@ export default function CryptoMarketSection() {
         </div>
       </div>
 
-      <div style={{ marginTop: "300px", display: "flex", height: "750px" }}>
+      <div
+        style={{
+          marginTop: "300px",
+          display: "flex",
+          width: "100%",
+          height: "750px",
+        }}
+      >
         <div
           style={{
             width: "100%",
@@ -462,6 +365,6 @@ export default function CryptoMarketSection() {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 }
