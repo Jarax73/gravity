@@ -8,7 +8,6 @@ const Section = styled.section`
   flex-direction: column;
   align-items: center;
   position: relative;
-  border: 1px solid red;
 
   @media (max-width: 1023px) {
     margin-top: 150px;
@@ -78,6 +77,7 @@ const Img3 = styled.img`
     display: none;
   }
 `;
+
 const Img4 = styled.img`
   position: absolute;
   right: 450px;
@@ -106,7 +106,6 @@ const Paragraph = styled.p`
   width: 30%;
   font-size: 20px
   color: #e5e5e5;
-    border: 1px solid red;
 
   @media (max-width: 1023px) {
    width: 75%;
