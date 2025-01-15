@@ -1,15 +1,27 @@
 import React from "react";
+import LogoPart from "./LogoPart";
+import styled from "styled-components";
+
+const Section = styled.section`
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+
+  @media (max-width: 1023px) {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 100px;
+  }
+`;
 
 export default function Partners() {
   return (
-    <div
-      style={{
-        marginTop: "300px",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <Section>
+      <LogoPart />
       <h1 style={{ fontWeight: "500", fontSize: "58px" }}>
         We are in a good company
       </h1>
@@ -63,6 +75,6 @@ export default function Partners() {
       <p style={{ marginTop: "100px" }}>
         <img src="/assets/dots.png" alt="" />
       </p>
-    </div>
+    </Section>
   );
 }
