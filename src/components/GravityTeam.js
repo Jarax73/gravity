@@ -1,6 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 
+const Section = styled.div`
+  margin-top: 350px;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+
+  @media (max-width: 1023px) {
+    margin-top: 150px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 100px;
+  }
+`;
+
 const Link = styled.a`
   position: relative;
   text-decoration: none;
@@ -21,58 +41,105 @@ const Link = styled.a`
     margin-top: 10px;
     background: linear-gradient(90deg, #665dcd 0%, #5fa4e6 45%, #d2ab67 100%);
   }
+
+  @media (max-width: 1023px) {
+    &::after {
+      width: 77%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &::after {
+      width: 82%;
+    }
+  }
+`;
+
+const BackgroundContainer = styled.div`
+  position: relative;
+`;
+
+const Img = styled.img`
+  position: absolute;
+  left: -140px;
+  top: -100px;
+`;
+const Img2 = styled.img`
+  position: absolute;
+  left: 180px;
+  top: -100px;
+`;
+
+const H1 = styled.h1`
+  font-size: 53px;
+  width: 100%;
+  text-align: left;
+
+  @media (max-width: 1023px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 31px;
+  }
+`;
+
+const ParagraphTeam = styled.div`
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1023px) {
+    width: 55%;
+    border: 1px solid red;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+`;
+
+const Paragraph = styled.p`
+  font-size: 20px;
+  text-align: left;
+  color: #e5e5e5;
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 `;
 
 export default function GravityTeam() {
   return (
-    <div
-      style={{
-        height: "400px",
-        marginTop: "350px",
-        paddingLeft: "370px",
-        paddingRight: "370px",
-        display: "flex",
-        justifyContent: "space-between",
-      }}
-    >
+    <Section>
       <div>
-        <div style={{ position: "relative" }}>
-          <img
-            src="/assets/gravityb.png"
-            alt=""
-            style={{ position: "absolute", left: -140, top: -100 }}
-          />
-          <img
-            src="/assets/gravityy.png"
-            alt=""
-            style={{ position: "absolute", left: 180, top: -100 }}
-          />
-        </div>
+        <BackgroundContainer>
+          <Img src="/assets/gravityb.png" alt="" />
+          <Img2 src="/assets/gravityy.png" alt="" />
+        </BackgroundContainer>
         <div>
-          <h1 style={{ fontSize: "53px", width: "400px", textAlign: "left" }}>
+          <H1>
             Join <br />
             Gravity Team
-          </h1>
+          </H1>
         </div>
       </div>
-      <div
-        style={{
-          width: "510px",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <p style={{ fontSize: "19px", textAlign: "left", color: "#E5E5E5" }}>
+      <ParagraphTeam>
+        <Paragraph>
           Join our community of innovators, problem solvers and owners who apply
           scientific discovery techniques to make crypto markets a better place
           for everyone.
-        </p>
-        <p style={{ fontSize: "19px", textAlign: "left", color: "#E5E5E5" }}>
+        </Paragraph>
+        <Paragraph>
           As we emphasize it in our name – Gravity Team, we are a team. A team
           of bright, talented people, each masters of their specialty, curious
           about the world and eager to solve the new exciting cryptocurrency
           market problems, build cool stuff and have fun whilst doing so!
-        </p>
+        </Paragraph>
         <div>
           <Link href="#">
             Learn more about working with us
@@ -83,7 +150,7 @@ export default function GravityTeam() {
             />
           </Link>
         </div>
-      </div>
-    </div>
+      </ParagraphTeam>
+    </Section>
   );
 }
