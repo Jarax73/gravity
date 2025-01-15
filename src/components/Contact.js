@@ -1,61 +1,143 @@
 import React from "react";
 import styled from "styled-components";
 
+const Section = styled.section`
+  height: 500px;
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid red;
+
+  @media (max-width: 1023px) {
+    margin-top: 150px;
+  }
+`;
+
 const Button = styled.button`
   background: linear-gradient(90deg, #665dcd 0%, #5fa4e6 45%, #d2ab67 100%);
   border: none;
-  font-size: 19px;
+  font-size: 20px;
   color: white;
   height: 58px;
   width: 190px;
   cursor: pointer;
+
+  @media (max-width: 1023px) {
+    width: 20%;
+    height: 10%;
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+    width: 35%;
+    font-size: 14px;
+  }
+`;
+
+const Img = styled.img`
+  position: absolute;
+  left: 250px;
+  top: 100px;
+
+  @media (max-width: 1023px) {
+    top: 150px;
+    left: -100px;
+  }
+`;
+
+const Img2 = styled.img`
+  position: absolute;
+  right: 700px;
+  top: 0px;
+
+  @media (max-width: 1023px) {
+    top: 150px;
+    right: -100px;
+  }
+
+  @media (max-width: 767px) {
+    width: 60%;
+    top: 150px;
+    right: -50px;
+  }
+`;
+
+const Img3 = styled.img`
+  position: absolute;
+  right: 300px;
+  top: -100px;
+
+  @media (max-width: 1023px) {
+    top: -80px;
+    right: -105px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+`;
+const Img4 = styled.img`
+  position: absolute;
+  right: 450px;
+  top: 150px;
+
+  @media (max-width: 1023px) {
+    top: 30px;
+    right: 200px;
+  }
+`;
+
+const H1 = styled.h1`
+  font-weight: 500;
+  font-size: 58px;
+
+  @media (max-width: 1023px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+  }
+`;
+
+const Paragraph = styled.p`
+  width: 30%;
+  font-size: 20px
+  color: #e5e5e5;
+    border: 1px solid red;
+
+  @media (max-width: 1023px) {
+   width: 75%;
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+   width: 90%;
+    font-size: 14px;
+  }
+
 `;
 
 export default function Contact() {
   return (
-    <div
-      style={{
-        height: "500px",
-        marginTop: "250px",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        position: "relative",
-      }}
-    >
-      {/* <div style={{  }}> */}
-      <img
-        src="/assets/blue.png"
-        alt=""
-        style={{ position: "absolute", left: 250, top: 100 }}
-      />
-      <img
-        src="/assets/y.png"
-        alt=""
-        style={{ position: "absolute", right: 700, top: 0 }}
-      />
-      <img
-        src="/assets/violet.png"
-        alt=""
-        style={{ position: "absolute", right: 300, top: -100 }}
-      />
-      <img
-        src="/assets/yy.png"
-        alt=""
-        style={{ position: "absolute", right: 450, top: 150 }}
-      />
-      {/* </div> */}
-      <div style={{}}>
-        <h1 style={{ fontSize: "58px", fontWeight: "500" }}>Contact Us</h1>
-        <p style={{ width: "623px", fontSize: "20px", color: "#E5E5E5" }}>
+    <Section>
+      <Img src="/assets/blue.png" alt="" />
+      <Img2 src="/assets/y.png" alt="" />
+      <Img3 src="/assets/violet.png" alt="" />
+      <Img4 src="/assets/yy.png" alt="" />
+      <>
+        <H1>Contact Us</H1>
+        <Paragraph>
           We are always open to discuss new value-adding partnerships. Do reach
           out if you are an exchange or a project looking for liquidity; an
           algorithmic trader or a software developer looking to improve the
           markets with us or just have a great idea you can’t wait to share with
           us!
-        </p>
+        </Paragraph>
         <Button>GET IN TOUCH</Button>
-      </div>
-    </div>
+      </>
+    </Section>
   );
 }

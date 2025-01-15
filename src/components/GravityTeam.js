@@ -7,7 +7,6 @@ const Section = styled.div`
   padding-right: 20%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 
   @media (max-width: 1023px) {
     margin-top: 150px;
@@ -91,7 +90,6 @@ const ParagraphTeam = styled.div`
 
   @media (max-width: 1023px) {
     width: 55%;
-    border: 1px solid red;
   }
 
   @media (max-width: 767px) {
