@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import styled from "styled-components";
 
@@ -128,8 +129,8 @@ export default function GravityTeam() {
     <Section>
       <div>
         <BackgroundContainer>
-          <Img src="/assets/gravityb.png" alt="" />
-          <Img2 src="/assets/gravityy.png" alt="" />
+          <Img src={`${process.env.PUBLIC_URL}/assets/gravityb.png`} alt="" />
+          <Img2 src={`${process.env.PUBLIC_URL}/assets/gravityy.png`} alt="" />
         </BackgroundContainer>
         <div>
           <H1>
@@ -154,7 +155,7 @@ export default function GravityTeam() {
           <Link href="#">
             Learn more about working with us
             <img
-              src="/assets/a_after.png"
+              src={`${process.env.PUBLIC_URL}/assets/a_after.png`}
               alt="after"
               style={{ marginLeft: "10px" }}
             />

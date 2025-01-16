@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import styled from "styled-components";
 
@@ -298,7 +299,7 @@ export default function MarketMaking() {
           <Link href="#">
             Learn more
             <img
-              src="/assets/a_after.png"
+              src={`${process.env.PUBLIC_URL}/assets/a_after.png`}
               alt="after"
               style={{ marginLeft: "10px" }}
             />
@@ -307,10 +308,22 @@ export default function MarketMaking() {
       </Description>
       <D3>
         <Bloc1>
-          <Img1 src="/assets/token-4.png" alt="token 4" />
-          <Img2 src="/assets/shadow-4.png" alt="shadow 4" />
-          <Img3 src="/assets/table-4.png" alt="table 4" />
-          <Img4 src="/assets/bar-4.png" alt="bar 4" />
+          <Img1
+            src={`${process.env.PUBLIC_URL}/assets/token-4.png`}
+            alt="token 4"
+          />
+          <Img2
+            src={`${process.env.PUBLIC_URL}/assets/shadow-4.png`}
+            alt="shadow 4"
+          />
+          <Img3
+            src={`${process.env.PUBLIC_URL}/assets/table-4.png`}
+            alt="table 4"
+          />
+          <Img4
+            src={`${process.env.PUBLIC_URL}/assets/bar-4.png`}
+            alt="bar 4"
+          />
         </Bloc1>
         <div
           style={{
@@ -322,10 +335,22 @@ export default function MarketMaking() {
             left: 80,
           }}
         >
-          <Img5 src="/assets/token-1.png" alt="token 1" />
-          <Img6 src="/assets/shadow-1.png" alt="shadow 1" />
-          <Img7 src="/assets/table-1.png" alt="table 1" />
-          <Img8 src="/assets/bar-1.png" alt="bar 1" />
+          <Img5
+            src={`${process.env.PUBLIC_URL}/assets/token-1.png`}
+            alt="token 1"
+          />
+          <Img6
+            src={`${process.env.PUBLIC_URL}/assets/shadow-1.png`}
+            alt="shadow 1"
+          />
+          <Img7
+            src={`${process.env.PUBLIC_URL}/assets/table-1.png`}
+            alt="table 1"
+          />
+          <Img8
+            src={`${process.env.PUBLIC_URL}/assets/bar-1.png`}
+            alt="bar 1"
+          />
         </div>
         <div
           style={{
@@ -337,10 +362,22 @@ export default function MarketMaking() {
             bottom: 40,
           }}
         >
-          <Img9 src="/assets/token-3.png" alt="token 3" />
-          <Img10 src="/assets/shadow-3.png" alt="shadow 3" />
-          <Img11 src="/assets/table-3.png" alt="table 3" />
-          <Img12 src="/assets/bar-3.png" alt="bar 3" />
+          <Img9
+            src={`${process.env.PUBLIC_URL}/assets/token-3.png`}
+            alt="token 3"
+          />
+          <Img10
+            src={`${process.env.PUBLIC_URL}/assets/shadow-3.png`}
+            alt="shadow 3"
+          />
+          <Img11
+            src={`${process.env.PUBLIC_URL}/assets/table-3.png`}
+            alt="table 3"
+          />
+          <Img12
+            src={`${process.env.PUBLIC_URL}/assets/bar-3.png`}
+            alt="bar 3"
+          />
         </div>
         <div
           style={{
@@ -353,10 +390,22 @@ export default function MarketMaking() {
             right: 60,
           }}
         >
-          <Img13 src="/assets/token-2.png" alt="token 2" />
-          <Img14 src="/assets/shadow-2.png" alt="shadow 2" />
-          <Img15 src="/assets/table-2.png" alt="table 2" />
-          <Img16 src="/assets/bar-2.png" alt="bar 2" />
+          <Img13
+            src={`${process.env.PUBLIC_URL}/assets/token-2.png`}
+            alt="token 2"
+          />
+          <Img14
+            src={`${process.env.PUBLIC_URL}/assets/shadow-2.png`}
+            alt="shadow 2"
+          />
+          <Img15
+            src={`${process.env.PUBLIC_URL}/assets/table-2.png`}
+            alt="table 2"
+          />
+          <Img16
+            src={`${process.env.PUBLIC_URL}/assets/bar-2.png`}
+            alt="bar 2"
+          />
         </div>
       </D3>
     </Section>

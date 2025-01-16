@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import styled from "styled-components";
 
@@ -130,10 +131,10 @@ const Paragraph = styled.p`
 export default function Contact() {
   return (
     <Section>
-      <Img src="/assets/blue.png" alt="" />
-      <Img2 src="/assets/y.png" alt="" />
-      <Img3 src="/assets/violet.png" alt="" />
-      <Img4 src="/assets/yy.png" alt="" />
+      <Img src={`${process.env.PUBLIC_URL}/assets/blue.png`} alt="" />
+      <Img2 src={`${process.env.PUBLIC_URL}/assets/y.png`} alt="" />
+      <Img3 src={`${process.env.PUBLIC_URL}/assets/violet.png`} alt="" />
+      <Img4 src={`${process.env.PUBLIC_URL}/assets/yy.png`} alt="" />
       <>
         <H1>Contact Us</H1>
         <Paragraph>

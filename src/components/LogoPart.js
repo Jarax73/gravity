@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import styled from "styled-components";
 
@@ -6,11 +7,14 @@ export default function LogoPart() {
     <Section>
       <ImgSection>
         <ImgContainer>
-          <Img src="/assets/middle-left-2.png" alt="" />
+          <Img
+            src={`${process.env.PUBLIC_URL}/assets/middle-left-2.png`}
+            alt=""
+          />
           <div>
-            <Img2 src="/assets/near.png" alt="" />
-            <Img3 src="/assets/solana.png" alt="" />
-            <Img4 src="/assets/mena.png" alt="" />
+            <Img2 src={`${process.env.PUBLIC_URL}/assets/near.png`} alt="" />
+            <Img3 src={`${process.env.PUBLIC_URL}/assets/solana.png`} alt="" />
+            <Img4 src={`${process.env.PUBLIC_URL}/assets/mena.png`} alt="" />
           </div>
         </ImgContainer>
         <SectionTitle>
@@ -20,29 +24,47 @@ export default function LogoPart() {
       <PartnerFirmContainer>
         <FirstSection>
           <FirmContainer>
-            <FirmImg src="/assets/bithumb@2x.png.png" alt="" />
+            <FirmImg
+              src={`${process.env.PUBLIC_URL}/assets/bithumb@2x.png.png`}
+              alt=""
+            />
             <FirmLegend>Bithumb</FirmLegend>
           </FirmContainer>
           <FirmContainer>
-            <FirmImg src="/assets/bitbank@2x.png.png" alt="" />
+            <FirmImg
+              src={`${process.env.PUBLIC_URL}/assets/bitbank@2x.png.png`}
+              alt=""
+            />
             <FirmLegend>Bitbank</FirmLegend>
           </FirmContainer>
           <FirmContainer>
-            <FirmImg src="/assets/binance@2x.png.png" alt="" />
+            <FirmImg
+              src={`${process.env.PUBLIC_URL}/assets/binance@2x.png.png`}
+              alt=""
+            />
             <FirmLegend>Binance</FirmLegend>
           </FirmContainer>
         </FirstSection>
         <SecongSection>
           <FirmContainer>
-            <FirmImg src="/assets/bitstamp@2x.png.png" alt="" />
+            <FirmImg
+              src={`${process.env.PUBLIC_URL}/assets/bitstamp@2x.png.png`}
+              alt=""
+            />
             <FirmLegend>Bitstamp</FirmLegend>
           </FirmContainer>
           <FirmContainer>
-            <FirmImg src="/assets/coinbase@2x.png.png" alt="" />
+            <FirmImg
+              src={`${process.env.PUBLIC_URL}/assets/coinbase@2x.png.png`}
+              alt=""
+            />
             <FirmLegend>Coinbase</FirmLegend>
           </FirmContainer>
           <FirmContainer>
-            <FirmImg src="/assets/bitfinex@2x.png.png" alt="" />
+            <FirmImg
+              src={`${process.env.PUBLIC_URL}/assets/bitfinex@2x.png.png`}
+              alt=""
+            />
             <FirmLegend>Bitfinex</FirmLegend>
           </FirmContainer>
         </SecongSection>

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import styled from "styled-components";
 import MarketMaking from "./MarketMaking";
@@ -82,7 +83,10 @@ const BackgroundImage = styled.img`
 export default function CryptoMarketSection() {
   return (
     <Section>
-      <BackgroundImage src="/assets/background-blob-service-1.png" alt="" />
+      <BackgroundImage
+        src={`${process.env.PUBLIC_URL}/assets/background-blob-service-1.png`}
+        alt=""
+      />
       <Market>
         <TitleMarket>Crypto Market Making</TitleMarket>
         <ParagraphMarket>

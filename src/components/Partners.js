@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import LogoPart from "./LogoPart";
 import styled from "styled-components";
@@ -121,8 +122,8 @@ export default function Partners() {
         happy to share some of their feedback below
       </Paragraph>
       <ArrowContainer>
-        <img src="/assets/arrowLeft.png" alt="" />
-        <img src="/assets/arrowRight.png" alt="" />
+        <img src={`${process.env.PUBLIC_URL}/assets/arrowLeft.png`} alt="" />
+        <img src={`${process.env.PUBLIC_URL}/assets/arrowRight.png`} alt="" />
       </ArrowContainer>
       <Comment>
         Since 2019, Gravity team has been an astounding market maker for Bitkub.
@@ -136,13 +137,13 @@ export default function Partners() {
       <Grade>
         Co-founder & CEO of Bitkub |
         <img
-          src="/assets/bitkub-logo-light-trimmed.png.png"
+          src={`${process.env.PUBLIC_URL}/assets/bitkub-logo-light-trimmed.png.png`}
           alt=""
           style={{ marginLeft: "10px" }}
         />
       </Grade>
       <Dots>
-        <img src="/assets/dots.png" alt="" />
+        <img src={`${process.env.PUBLIC_URL}/assets/dots.png`} alt="" />
       </Dots>
     </Section>
   );

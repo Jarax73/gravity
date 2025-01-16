@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import styled from "styled-components";
 
@@ -98,15 +99,18 @@ export default function Footer() {
           <FirstTitle>Gravity Team</FirstTitle>
           <FirstList>
             <li>
-              <a href="#">About Us</a>
+              <a href="/">About Us</a>
             </li>
             <li style={{ marginTop: "10px" }}>
-              <a href="#">Work with Us</a>
+              <a href="/">Work with Us</a>
             </li>
           </FirstList>
         </First>
         <p>
-          <img src="/logo-light.png" alt="gravity logo" />
+          <img
+            src={`${process.env.PUBLIC_URL}/logo-light.png`}
+            alt="gravity logo"
+          />
         </p>
       </FirstSection>
       <SecondSection>

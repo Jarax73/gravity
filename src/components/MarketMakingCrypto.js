@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import styled from "styled-components";
 
@@ -152,9 +153,12 @@ export default function MarketMakingCrypto() {
     <Section>
       <div>
         <ImgSection>
-          <Img1 src="/assets/div.png" alt="div" />
-          <Img2 src="/assets/exchange-screens-new.png" alt="exchange" />
-          <Img3 src="/assets/grid.png" alt="grid" />
+          <Img1 src={`${process.env.PUBLIC_URL}/assets/div.png`} alt="div" />
+          <Img2
+            src={`${process.env.PUBLIC_URL}/assets/exchange-screens-new.png`}
+            alt="exchange"
+          />
+          <Img3 src={`${process.env.PUBLIC_URL}/assets/grid.png`} alt="grid" />
         </ImgSection>
       </div>
       <Aside>
@@ -171,7 +175,7 @@ export default function MarketMakingCrypto() {
           <Link href="#">
             Learn more
             <img
-              src="/assets/a_after.png"
+              src={`${process.env.PUBLIC_URL}/assets/a_after.png`}
               alt="after"
               style={{ marginLeft: "10px" }}
             />

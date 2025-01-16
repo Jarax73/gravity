@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useState } from "react";
 import styled from "styled-components";
 
@@ -156,7 +157,10 @@ export default function NavBar() {
           justifyContent: "flex-start",
         }}
       >
-        <Logo src="/logo-light.png" alt="gravity logo" />
+        <Logo
+          src={`${process.env.PUBLIC_URL}/logo-light.png`}
+          alt="gravity logo"
+        />
       </p>
 
       {!active && window.innerWidth < 768 ? (
@@ -205,7 +209,10 @@ export default function NavBar() {
             </List>
 
             <Button>
-              <BtnImg src="/button_before.png" alt="button" />
+              <BtnImg
+                src={`${process.env.PUBLIC_URL}/button_before.png`}
+                alt="button"
+              />
               GET IN TOUCH
             </Button>
           </Navigation>
