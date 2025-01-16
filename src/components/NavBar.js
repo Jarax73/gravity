@@ -4,21 +4,21 @@ import styled from "styled-components";
 const Nav = styled.div`
   display: flex;
   color: white;
-  padding-left: 94px;
-  padding-right: 94px;
+  padding-left: 5%;
+  padding-right: 5%;
   align-items: center;
   height: 120px;
 
   @media (max-width: 1023px) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
     align-items: center;
     height: 80px;
   }
 
   @media (max-width: 767px) {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0%;
+    padding-right: 0%;
     align-items: center;
     height: 80px;
     position: relative;
@@ -69,6 +69,7 @@ const Logo = styled.img`
   }
 
   @media (max-width: 767px) {
+    margin-left: 2%;
     width: 100px;
   }
 `;
@@ -139,15 +140,13 @@ const Hamburger = styled.div`
     justify-content: space-between;
     gap: 10;
     height: 20px;
-    // position: absolute;
-    // top: 0;
-    // right: 0;
     padding-right: 10px;
   }
 `;
 
 export default function NavBar() {
   const [active, setActive] = useState(false);
+  console.info("here", window.innerWidth);
   return (
     <Nav>
       <p

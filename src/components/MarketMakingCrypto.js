@@ -22,7 +22,9 @@ const Img1 = styled.img`
   top: 0;
 
   @media (max-width: 767px) {
-    left: -180px;
+    width: 150%;
+    top: 5%;
+    left: -50%;
   }
 `;
 

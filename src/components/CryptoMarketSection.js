@@ -67,15 +67,15 @@ const BackgroundImage = styled.img`
   right: 0;
 
   @media (max-width: 1023px) {
-    width: 250%;
-    top: -550px;
-    right: -300px;
+    width: 150%;
+    top: -200px;
+    right: 10%;
   }
 
   @media (max-width: 767px) {
-    width: 350%;
-    top: -200px;
-    right: -350px;
+    width: 200%;
+    top: 0%;
+    right: 0%;
   }
 `;
 

@@ -100,8 +100,8 @@ const Img = styled.img`
   }
 
   @media (max-width: 767px) {
-    width: 200%;
-    left: -200px;
+    width: 150%;
+    left: -50%;
   }
 `;
 

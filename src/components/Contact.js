@@ -44,6 +44,12 @@ const Img = styled.img`
     top: 150px;
     left: -100px;
   }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    top: 4%;
+    left: 0.1%;
+  }
 `;
 
 const Img2 = styled.img`
@@ -52,14 +58,15 @@ const Img2 = styled.img`
   top: 0px;
 
   @media (max-width: 1023px) {
-    top: 150px;
-    right: -100px;
+    top: 45%;
+    right: 5%;
+    width: 30%;
   }
 
   @media (max-width: 767px) {
     width: 60%;
-    top: 150px;
-    right: -50px;
+    top: 10%;
+    right: 0%;
   }
 `;
 
@@ -69,8 +76,9 @@ const Img3 = styled.img`
   top: -100px;
 
   @media (max-width: 1023px) {
-    top: -80px;
-    right: -105px;
+    width: 60%;
+    top: 5%;
+    right: 0%;
   }
 
   @media (max-width: 767px) {

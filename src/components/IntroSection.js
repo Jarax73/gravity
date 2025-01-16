@@ -12,7 +12,7 @@ const Section = styled.section`
   height: 900px;
 
   @media (max-width: 1023px) {
-    width: 50%;
+    width: 60%;
     height: 800px;
     justify-content: center;
   }

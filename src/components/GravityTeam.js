@@ -62,11 +62,23 @@ const Img = styled.img`
   position: absolute;
   left: -140px;
   top: -100px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    top: 0%;
+  }
 `;
+
 const Img2 = styled.img`
   position: absolute;
   left: 180px;
   top: -100px;
+
+  @media (max-width: 767px) {
+    width: 70%;
+    top: 0%;
+    left: 5%;
+  }
 `;
 
 const H1 = styled.h1`
